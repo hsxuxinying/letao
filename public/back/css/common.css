@@ -120,3 +120,13 @@ a,a:hover,a:link,a:active,a:visited{
     width: 400px;
     height: 45%;
 }
+
+/*表格*/
+.table.table-bordered td{
+    text-align: center;
+    vertical-align: middle;
+}
+/*分页标签居右对齐*/
+.paginator{
+    text-align: right;
+}
