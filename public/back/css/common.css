@@ -1,6 +1,122 @@
+
+html,body{
+    height: 100%;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+a,a:hover,a:link,a:active,a:visited{
+    text-decoration: none;
+}
+/*µ«¬º“≥*/
 .body_bg{
     background-color: #222d32;
 }
 .mt_150{
     margin-top: 150px;
+}
+
+/* ◊“≥*/
+.lt_aside{
+    height: 100%;
+    width: 180px;
+    background-color: #222d32;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    transition: all 1s
+}
+.lt_aside.now{
+    left: -180px;
+}
+.title,.title>a{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: #367fa9;
+    color: #fff;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+}
+.user{
+    width: 180px;
+    height: 150px;
+    overflow: hidden;
+}
+.user img{
+    height: 80px;
+    width: 80px;
+    display: block;
+    margin: 30px auto 0;
+    border-radius: 50%;
+}
+.user p{
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+}
+.nav{
+    margin-top: 30px;
+}
+.nav a{
+    display: block;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 30px;
+    border-left: 2px solid transparent;
+}
+.nav a.now{
+    background-color: #1d1f21;
+    border-left: 2px solid #069;
+}
+.nav .second a{
+    padding-left: 50px;
+}
+.lt_main{
+    width: 100%;
+    height: 100%;
+    padding-left: 180px;
+    transition: all 1s;
+}
+.lt_main.now{
+    padding-left: 0;
+}
+.lt_main .menu{
+    height: 50px;
+    width: 100%;
+    background-color: #3c8dbc;
+    margin-bottom: 20px;
+
+}
+.lt_main .menu a{
+    display: block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.container-fluid{
+    height: 100%;
+    width: 100%;
+}
+/*ƒ£Ã¨øÚ…Ë÷√*/
+.modal-body p{
+    color: #a94442;
+}
+/*Õº±Ì*/
+.lt_content{
+    width: 100%;
+    height: 100%;
+}
+.content_l,.content_r{
+    width: 400px;
+    height: 45%;
 }
