@@ -16,6 +16,10 @@ a,a:hover,a:link,a:active,a:visited{
 .mt_150{
     margin-top: 150px;
 }
+.mb_30{
+    margin-bottom: 30px;
+}
+
 
 /*Ê×Ò³*/
 .lt_aside{
@@ -122,6 +126,7 @@ a,a:hover,a:link,a:active,a:visited{
 }
 
 /*±í¸ñ*/
+.table.table-bordered th,
 .table.table-bordered td{
     text-align: center;
     vertical-align: middle;
