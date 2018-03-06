@@ -19,7 +19,7 @@ $(function(){
                 $('tbody').html(template('second_tmp',info));
                 $('#pagintor').bootstrapPaginator({
                     bootstrapMajorVersion:3,//默认是2，如果是bootstrap3版本，这个参数必填
-                    currentPage:1,//当前页
+                    currentPage:page,//当前页
                     totalPages:Math.ceil(info.total/info.size),//总页数
                     onPageClicked:function(a, b, c,p){
                         //为按钮绑定点击事件 page:当前点击的按钮值
@@ -128,13 +128,17 @@ $(function(){
             data:$('#form').serialize(),
             dataType:'json',
             success:function(info){
-                console.log(info);
+                //console.log(info);
                 if(info.success){
                 //    关闭模态框
                     $('#secondCateModal').modal('hide');
                 //    渲染第一页
                     page = 1;
                     render();
+                //    重置表单
+                    $("#form").data('bootstrapValidator').resetForm(true);
+                    $('.drop_text').text('请选择一级分类');
+                    $('.img_box img').attr('src','./images/none.png');
                 }
             }
         })
