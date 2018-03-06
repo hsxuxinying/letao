@@ -1,0 +1,31 @@
+@charset "UTF-8";
+.nav{
+    padding: 10px;
+}
+.nav li{
+    float: left;
+    width: 33.33%;
+
+}
+.product{
+    padding: 10px;
+}
+.product a{
+    display: block;
+    float: left;
+    width: 49%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.product a:nth-child(odd){
+    margin-right: 2%;
+}
+.product a .price{
+    color: red;
+
+}
+.product a .oldPrice{
+    text-decoration: line-through;
+}
