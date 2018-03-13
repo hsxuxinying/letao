@@ -218,16 +218,17 @@ $(function(){
     $("#form").on('success.form.bv', function (e) {
         e.preventDefault();
         var prame = $('#form').serialize();
-        prame += 'picName1=' + result[0].picName + 'picAddr1' + result[0].picAddr
-        prame += 'picName1=' + result[1].picName + 'picAddr1' + result[1].picAddr
-        prame += 'picName1=' + result[2].picName + 'picAddr1' + result[2].picAddr
-            //    发送ajax请求
+        prame += '&picName1=' + result[0].picName + '&picAddr1=' + result[0].picAddr
+        prame += '&picName2=' + result[1].picName + '&picAddr2=' + result[1].picAddr
+        prame += '&picName3=' + result[2].picName + '&picAddr3=' + result[2].picAddr
+        console.log(prame);
+        //    发送ajax请求
             $.ajax({
                 type:'POST',
                 url:'/product/addProduct',
                 data:prame,
                 success:function(info){
-                    //console.log(info);
+                    console.log(info);
                     if(info.success){
                     //    隐藏模态框
                         $('#productModal').modal('hide');

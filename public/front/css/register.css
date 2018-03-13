@@ -1,0 +1,28 @@
+@charset "UTF-8";
+.myForm{
+    padding: 10px;
+}
+.myForm [name=vCode] {
+    width: 65%;
+}
+.mui-input-row .btn_vcode{
+    width: 30%;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+
+}
+.mui-input-row .btn_vcode.now{
+    background-color: #666;
+    border: 1px solid #666;
+}
+.mui-input-row .btn_register{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+}
+.mui-input-row.bottom{
+    font-size: 12px;
+    margin-top: 10px;
+}

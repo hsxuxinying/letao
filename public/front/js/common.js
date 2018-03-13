@@ -17,7 +17,6 @@ function getPrame(key){
     //遍历数组把数组转化成对象
     var obj = {};
     arr.forEach(function(element,index){
-        console.log(element);
         //    以等号为分隔符分割数组
         var key = element.split('=')[0];
         var value = element.split('=')[1];

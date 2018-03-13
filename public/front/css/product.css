@@ -17,6 +17,9 @@
     border: 1px solid #000;
     background-color: #ccc;
 }
+.size span.now{
+    background-color: #069;
+}
 .overplus{
     font-size: 12px;
     color:#333;
